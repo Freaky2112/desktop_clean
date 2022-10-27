@@ -1,0 +1,5 @@
+- name: remove snap package
+  tags: rm_package
+  snap:
+    name: firefox
+    state: absent

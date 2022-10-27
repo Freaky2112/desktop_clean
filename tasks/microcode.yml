@@ -1,0 +1,19 @@
+- include_vars: vars_microcode.yml
+
+- name: microcode | install pacakage for amd
+  tags: amd,cpu,microcode
+  package:
+    name: amd64-microcode
+    state: latest
+  when:
+    - microcode_amd_install is defined
+    - microcode_amd_isntall == true
+
+- name: microcode | isntall pacakage for intel
+  tags: intel,cpu,microcode
+  package:
+    name: intel-microcode
+    state: latest
+  when:
+    - microcode_intel_install is defined
+    - microcode_intel_isntall == true

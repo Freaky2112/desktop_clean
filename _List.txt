@@ -1,0 +1,25 @@
+
+## working and implemented in local.yml file ##
+ok - bash.yml -> copy bashrc profile
+ok - clock.yml -> set timezone
+ok - lesbian -> create user for ansible add it to sudoers and add sshkey
+ok - locale.yml -> set region and keyboard
+ok - microcode.yml -> set microcode for intel or amd
+ok - packages.yml -> install standard package
+ok - tmux.yml -> copy tmux config
+ok - unattended_upgrades.yml -> copy config for unattended_upgrades
+ok - unattended.yml -> install unattended_upgrades
+ok - upgarde.yml -> do distro upgarde
+ok - wallpaper.yml -> set wallpaper
+ok - terminal.yml -> set terminal color background and text
+
+## Stuff in Dev...  ##
+- cron.yml -> set cron job
+- keyboard_layout.yml -> set keyboard to us 
+
+## working but not in the local.yml file ##
+working - random_wallpaper.yml -> set random random_wallpaper
+working - sshkey.yml -> copy sshkey for user 
+working - openssh.yml -> make sure ssh is install and copy ssh config file
+working - package_dev.yml -> install dev package
+working - package_cleanup.yml -> remove unnecessary package

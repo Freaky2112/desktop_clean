@@ -1,0 +1,14 @@
+# copy current bashrc to .bak 
+- name: backup bashrc
+  copy:
+    src: /home/freaky/.bashrc
+    dest: /home/freaky/.bashrc.bak
+
+# copy new copy of bashrc
+- name: copy bashrc file
+  copy:
+    src: files/bashrc
+    dest: /home/freaky/.bashrc
+    owner: freaky
+    group: freaky
+

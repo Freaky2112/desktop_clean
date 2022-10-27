@@ -1,0 +1,4 @@
+# ssh-key to install on all machines ... 
+
+freakyssh:
+leasbianssh: ssh-ed25519 AAAC3NzaC1lZDI1NTE5AAAAIBlslg0lTqwWwNgyhRDreBKP6NjSI5ewt7YTDzsa2nTe Ansible

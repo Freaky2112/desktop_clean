@@ -1,0 +1,10 @@
+---
+- hosts: all
+  become: true
+  roles:
+    - base
+
+- hosts: desktop
+  become: true
+  roles: 
+    - workstaions

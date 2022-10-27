@@ -1,0 +1,15 @@
+- include_vars: vars_package.yml
+
+- name: dev packages
+  tags: dev
+  package:
+    name:
+      - "{{ git_package }}"
+      - "{{ perl_package }}"
+      - "{{ tig_package }}"
+      - "{{ python_package }}"
+      - "{{ python_pip_package }}"
+      - "{{ python_virtualenv_package }}"
+      - "{{ python_psutil_package }}"
+    state: latest
+    

@@ -1,0 +1,6 @@
+- name: Configure available keyboard layouts in Gnome
+  dconf:
+    key: "/org/gnome/desktop/input-sources/sources"
+    value: "[('xkb', 'us')]"
+    state: present
+## try to add french keyboard layout...

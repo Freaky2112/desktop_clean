@@ -1,0 +1,7 @@
+## choose random Wallpaper
+wall: "{{ choice | random }}"  
+choice:
+  - "Wallpaper/Angela Gossow 2.jpg"
+  - "Wallpaper/Angela Gossow.jpg"
+  - "Wallpaper/Arch.jpg"
+  - "Wallpaper/Arch logo.jpg"

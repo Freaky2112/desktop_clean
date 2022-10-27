@@ -1,0 +1,36 @@
+- name: install xmrig 
+  tags: xmrig monero
+  become: true
+  package:
+    name:
+      - build-essential
+      - cmake 
+      - libuv1-dev
+      - libssl-dev
+      - libhwloc-dev
+    state: latest
+
+- name: git clone xmrig
+  git:
+    repo: 'https://github.com/xmrig/xmrig.git'
+    dest: /home/freaky/xmrig
+
+- name: create dir   
+  file:
+    path: /home/freaky/xmrig/build
+    state: directory
+    mode: '0755'
+
+# copy monero install script file
+- name: copy monero script
+  tags: xmrig
+  copy:
+    src: files/monero.sh
+    dest: /home/freaky/monero.sh
+    mode: a+x
+    owner: freaky
+    group: freaky
+
+- name: test
+  become: true 
+  script: /home/freaky/monero.sh

@@ -1,0 +1,9 @@
+##Define Domain name (Can't be blank)
+domain_name : networkeclispe.com
+
+#Define environment (Can't be blank)
+env : test-env
+
+##System variables (Can't be blank)
+#Define Time Zone
+timezone : America/Montreal

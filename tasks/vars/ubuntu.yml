@@ -1,0 +1,13 @@
+amd_microcode_package: amd64-microcode
+intel_microcode_package: intel-microcode
+cron_package: cron
+dconf_package: dconf-cli
+dns_utils_package: dnsutils
+openssh_package: openssh-server
+openssh_service: ssh
+python_package: python3
+python_pip_package: python3-pip
+python_psutil_package: python3-psutil
+python_virtualenv_package: python3-virtualenv
+rename_package: rename
+sudo_group: sudo
