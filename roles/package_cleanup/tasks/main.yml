@@ -1,0 +1,14 @@
+# remove unwanted packages for fresh intsall 
+
+- name: cleanup packages remove unneeded packages...
+  tags: cleanup
+  become: true
+  apt:
+    name:
+      - cowsay
+      - vim
+      - exim4
+      - exim4-base
+      - exim4-config
+    state: absent
+  when: ansible_distribution == 'Debian' or ansible_distribution == 'Ubuntu'

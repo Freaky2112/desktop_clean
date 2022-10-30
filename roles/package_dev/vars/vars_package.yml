@@ -1,0 +1,9 @@
+# Vars for packages to install standard app for desktop
+
+python_package: python3
+python_pip_package: python3-pip
+python_psutil_package: python3-psutil
+python_virtualenv_package: python3-virtualenv
+git_package: git
+perl_package: perl
+tig_package: tig
