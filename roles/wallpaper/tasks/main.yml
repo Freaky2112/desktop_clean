@@ -1,0 +1,37 @@
+- include_vars: vars_user.yml
+
+- name: copy wallpaper file
+  tags: wallpaper
+  copy:
+    src: Wallpaper/Arch logo.jpg
+    dest: /usr/share/backgrounds/ansible-wallpaper.jpg
+    owner: root
+    group: root
+
+- name: set wallpaper
+  tags: wallpaper
+  become_user: "{{main_user}}"
+  dconf:
+    key: "/org/gnome/desktop/background/picture-uri"
+    value: "'file:///usr/share/backgrounds/ansible-wallpaper.jpg'"
+
+- name: set wallpaper position
+  tags: wallpaper
+  become_user: "{{main_user}}"
+  dconf:
+    key: "/org/gnome/desktop/background/picture-options"
+    value: "'zoom'"
+## Lock Screen Wallpaper not working in gnome 3.36
+- name: Copy lockscreenfile
+  tags: wallpaper
+  copy: 
+    src: Wallpaper/Metal name.jpg 
+    dest: /usr/share/backgrounds/ansible-lockscreen.jpg 
+    owner: root 
+    group: root
+
+- name: Set lock screen background
+  tags: wallpaper
+  become_user: "{{main_user}}"
+  dconf: key="/org/gnome/desktop/screensaver/picture-uri" 
+    value="'file:///usr/share/backgrounds/ansible-lockscreen.jpg'"
