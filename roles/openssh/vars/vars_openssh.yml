@@ -1,0 +1,4 @@
+# open ssh Vars
+
+openssh_server_package: openssh-server
+openssh_service: ssh
