@@ -1,0 +1,22 @@
+# install timesync for use of ntp server
+- name: install timesync
+  tags: ntp clock
+  package:
+    name: systemd-timesyncd
+    state: latest
+  when: ansible_distribution in ["Unbutu"]
+
+# make sure timesync are started and enable
+- name: start and enable timesync
+  tags: ntp clock
+  service: 
+    name: systemd-timesyncd
+    state: started
+    enabled: true
+
+# set time zone
+- name: set time zone
+  tags: ntp clock
+  timezone:
+    name: "America/Montreal"
+
