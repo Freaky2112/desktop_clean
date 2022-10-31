@@ -1,0 +1,34 @@
+---
+- hosts: localhost
+  connection: local
+  become: true
+
+  pre_tasks:
+    - name: update repositories
+      package:
+        update_cache: yes
+      changed_when: False
+  
+  tasks:
+    - include: tasks/packages.yml
+    - include: tasks/terminal.yml
+    - include: tasks/bash.yml
+    - include: tasks/tmux.yml
+    - include: tasks/lesbian.yml
+    - include: tasks/unattended.yml
+    - include: tasks/unattended_upgrades.yml
+    - include: tasks/wallpaper.yml
+    - include: tasks/clock.yml
+    - include: tasks/locale.yml
+    - include: tasks/microcode.yml
+    - include: tasks/upgrade.yml
+    - include: tasks/discord_deb.yml
+    - include: tasks/favorites.yml
+    - include: tasks/vscode.yml
+    - include: tasks/snap_install.yml
+    ##- include: tasks/Keyboard_layout.yml
+    ##- include: tasks/cron.yml
+    ### Monero ###
+    #- include: tasks/xmrig.yml
+    #- include: tasks/cron_monero.yml
+    
