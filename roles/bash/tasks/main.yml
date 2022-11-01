@@ -1,3 +1,5 @@
+- include_vars: vars_user.yml
+
 # copy current bashrc to .bak 
 - name: backup bashrc
   become_user: freaky
@@ -13,3 +15,22 @@
     dest: /home/freaky/.bashrc
     owner: freaky
     group: freaky
+
+# create directory
+- name: create scripts directory
+  tags: scripts
+  file:
+    path: /home/freaky/scripts
+    state: directory
+    owner: "{{ main_user }}"
+    group: "{{ main_user }}"
+
+# copy scripts files
+- name: copy scripts files
+  become_user: "{{ main_user }}"
+  copy:
+    src: files/upgrade.sh
+    dest: /home/freaky/scripts/upgrade.sh
+    owner: freaky
+    group: freaky
+    mode: a+x

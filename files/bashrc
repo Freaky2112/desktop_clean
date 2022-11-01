@@ -220,7 +220,7 @@ fi
     # SSH AGENT  Alias
     alias  ssha='eval $(ssh-agent -s) && ssh-add ~/.ssh/github_ed25519'
     # Distro Upgrade ( yum / pcaman / apt )
-    alias upgrade="./Aliases/upgradescript.sh"
+    alias upgrade="./scripts/upgrade.sh"
     # Install essentiel
     alias fresh="sudo apt update && sudo apt install git curl wget net-tools tmux htop -y"
     # What is  my ip
