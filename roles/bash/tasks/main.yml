@@ -25,6 +25,15 @@
     owner: "{{ main_user }}"
     group: "{{ main_user }}"
 
+# copy new copy of bash aliases
+- name: copy bash aliases file
+  become_user: freaky
+  copy:
+    src: files/bash_aliases
+    dest: /home/freaky/.bash_aliases
+    owner: freaky
+    group: freaky
+
 # copy scripts files
 - name: copy scripts files
   become_user: "{{ main_user }}"

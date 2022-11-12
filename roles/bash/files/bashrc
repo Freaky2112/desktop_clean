@@ -214,20 +214,3 @@ if ! shopt -oq posix; then
   fi
 fi
 
-
-# ## My Aliases ##
-
-    # SSH AGENT  Alias
-    alias  ssha='eval $(ssh-agent -s) && ssh-add ~/.ssh/github_ed25519'
-    # Distro Upgrade ( yum / pcaman / apt )
-    alias upgrade="./scripts/upgrade.sh"
-    # Install essentiel
-    alias fresh="sudo apt update && sudo apt install git curl wget net-tools tmux htop -y"
-    # What is  my ip
-    alias wip="curl icanhazip.com"
-    # Sudo Apt
-    alias apt="sudo apt"
-    # Reboot server with Sudo
-    alias reboot="sudo reboot"
-    # check open port
-    alias port="netstat -tulanp"
