@@ -16,3 +16,5 @@
     alias port="netstat -tulanp"
     # Weather
     alias wt="curl wttr.in"
+    # Speed Test
+    alias speed="curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python3 -"
