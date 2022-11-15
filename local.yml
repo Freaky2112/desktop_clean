@@ -8,7 +8,10 @@
       package:
         update_cache: yes
       changed_when: False
-  
+
+- hosts: localhost
+  connection: local  
+  become: true
   roles:
     - package
     - terminal
