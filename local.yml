@@ -20,15 +20,15 @@
     - lesbian
     #- unattended
     #- unattended_upgrades
-    - wallpaper
-    - clock
-    - locale
-    - microcode
-    - upgrade
-    - discord
-    - favorites
-    - vscode
-    - snap_install
+    #- wallpaper
+    #- clock
+    #- locale
+    #- microcode
+    #- upgrade
+    #- discord
+    #- favorites
+    #- vscode
+    #- snap_install
     
     
     ##- include: tasks/cron.yml
