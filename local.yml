@@ -19,7 +19,7 @@
     - tmux
     - lesbian
     - unattended
-    #- unattended_upgrades
+    - unattended_upgrades
     #- wallpaper
     #- clock
     #- locale
