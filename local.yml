@@ -18,8 +18,8 @@
     - bash
     - tmux
     - lesbian
-    - unattended
-    - unattended_upgrades
+    #- unattended
+    #- unattended_upgrades
     - wallpaper
     - clock
     - locale
