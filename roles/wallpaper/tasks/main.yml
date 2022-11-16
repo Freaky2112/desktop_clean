@@ -3,7 +3,7 @@
 - name: copy wallpaper file
   tags: wallpaper
   copy:
-    src: Wallpaper/Arch logo.jpg
+    src: files/Wallpaper/Arch logo.jpg
     dest: /usr/share/backgrounds/ansible-wallpaper.jpg
     owner: root
     group: root
