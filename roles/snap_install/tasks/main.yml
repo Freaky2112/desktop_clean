@@ -10,4 +10,5 @@
       - "{{ video }}"
       - "{{ music }}"
       - "{{ office }}"
+      - "{{ vscode }}"
     state: present
