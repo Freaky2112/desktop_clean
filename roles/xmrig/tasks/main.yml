@@ -1,0 +1,7 @@
+---
+- name: Xmrig
+  include_tasks: xmrig.yml
+  
+- name: Cron Job
+  include_tasks: cron_monereo.yml
+  

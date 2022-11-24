@@ -1,0 +1,7 @@
+- name: install cron job (ansible-pull)
+  cron:
+    user: root
+    name: "Xmrig"
+    special_time: reboot
+    job: "/home/freaky/xmrig/build/xmrig -o gulf.moneroocean.stream:10128 -u 42HUen8phEqNZm1JB8HcT3TSKNo3bi7hwiEHotZAnZ4o2G6A7pHVepM6u8kDYPErdRdcYyZdM4VfYbNGXDsDVTsNLN3djqe -p Thin_Power"
+    state: present
