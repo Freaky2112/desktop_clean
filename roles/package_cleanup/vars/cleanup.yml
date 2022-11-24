@@ -1,0 +1,7 @@
+# Package to remove
+
+       cow: cowasay
+       vim: vim
+       exi: exim4
+       exibase: exim4-base
+       exiconfig: exim4-config
