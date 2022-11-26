@@ -7,3 +7,5 @@ python_virtualenv_package: python3-virtualenv
 git_package: git
 perl_package: perl
 tig_package: tig
+whois_package: whois
+zsh_bash: zsh
