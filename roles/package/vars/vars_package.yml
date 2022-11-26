@@ -18,7 +18,9 @@ rsync_package: rsync
 git_package: git
 perl_package: perl
 tig_package: tig
-matrix: cmatrix
+terminal_screen_saver: cmatrix
 trace_package: traceroute
-nmap: nmap
+network_mapper: nmap
 cdiff: colordiff
+mutli_screen: screen
+ssh_mount: sshfs
