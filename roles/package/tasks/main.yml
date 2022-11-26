@@ -13,15 +13,13 @@
       - "{{ python_psutil_package }}"
       - "{{ network_tools }}"
       - "{{ dconf_package }}"
-      - "{{ matrix }}"
+      - "{{ terminal_screen_saver }}"
       - "{{ rsync_package }}"
       - "{{ trace_package }}"
-      - "{{ nmap }}"
+      - "{{ network_mapper }}"
       - "{{ cdiff }}"
       - "{{ dns_utils_package }}"
       - at
-      - screen
-      - sshfs
-      - whois
-      - zsh
+      - "{{ mutli_screen }}"
+      - "{{ ssh_mount }}"
     state: latest
