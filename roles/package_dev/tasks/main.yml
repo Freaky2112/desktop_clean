@@ -11,5 +11,7 @@
       - "{{ python_pip_package }}"
       - "{{ python_virtualenv_package }}"
       - "{{ python_psutil_package }}"
+      - "{{ whois_package }}"
+      - "{{ zsh_bash }}"
     state: latest
     
