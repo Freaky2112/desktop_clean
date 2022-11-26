@@ -1,0 +1,4 @@
+#standard user to create on machine
+
+main_user: freaky
+ansible_user: lesbian
