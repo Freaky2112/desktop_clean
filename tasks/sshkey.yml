@@ -1,8 +1,0 @@
-- name: add ssh key for User ansible
-  tags: ssh sshkey 
-  become_user: lesbian
-  authorized_key:
-    user: lesbian
-    state: present
-    key: ssh-ed25519 AAAC3NzaC1lZDI1NTE5AAAAIBlslg0lTqwWwNgyhRDreBKP6NjSI5ewt7YTDzsa2nTe Ansible
-    ## change state to absent to remove key and present to add ##
