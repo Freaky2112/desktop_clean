@@ -12,7 +12,7 @@ fi
 if [ -d /etc/apt ]
 then
 	## RUn the Debian version Update command
-	sudo apt update && sudo apt dist-upgrade -y
+	sudo apt update && sudo apt dist-upgrade -y && sudo snap refresh
 fi
 
 if [ -d /etc/yum ]

@@ -4,6 +4,8 @@
     alias  ssha='eval $(ssh-agent -s) && ssh-add ~/.ssh/github_ed25519'
     # Distro Upgrade ( yum / pcaman / apt )
     alias upgrade=".local/bin/upgrade.sh"
+    # Update snap Packages
+    alias snapupdate="sudo snap refresh"
     # Install essentiel
     alias fresh="sudo apt update && sudo apt install git curl wget net-tools tmux htop -y"
     # What is  my ip
@@ -19,4 +21,4 @@
     # Speed Test
     alias speed="curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python3 -"
     # clean Trash
-    alias clean="rm -rf $HOME/.local/share/Trash/files/* && rm -rf $HOME/.local/share/info/*"
+    alias cleanup="rm -rf $HOME/.local/share/Trash/files/* && rm -rf $HOME/.local/share/info/*"
