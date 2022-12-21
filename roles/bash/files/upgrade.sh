@@ -9,7 +9,7 @@ checkexit() {
 		then
 		    echo "An error occurred, please check the $errorlog file."
 		else
-		    echo "Update run without any issue System is Fully Patch Have a Nice Day :)"
+		    echo "Update run without any issue System is Fully Patch Have a Nice Day :) 🤟🤟🤟"
 		fi
 }
 
