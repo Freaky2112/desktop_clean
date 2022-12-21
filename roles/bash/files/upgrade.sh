@@ -2,6 +2,8 @@
 
 # Variables
 errorlog=~/updater_error.log
+update="     >>>>   Checking for Update in Progess Please Wait .... <<<< "
+
 
 # Fucntions check error code 
 checkexit() {
@@ -19,6 +21,8 @@ checkexit() {
 if [ -d /etc/pacman.d ]
 then
 	## RUn the Arch version Update command
+    echo $update
+    echo
 	sudo pacman -Syu 1>/dev/null 2>>$errorlog
 	checkexit
 fi
@@ -27,6 +31,8 @@ fi
 if [ -d /etc/apt ]
 then
 	## RUn the Debian version Update Upgrade and Snapupgrade command
+	echo $update
+    echo
 	sudo apt update 1>/dev/null 2>>$errorlog
 	checkexit
 	
@@ -40,6 +46,8 @@ fi
 if [ -d /etc/yum ]
 then
 	## RUn the Centos version Update command
+    echo $update
+    echo	
 	sudo yum update -y 1>/dev/null 2>>$errorlog
 	checkexit
 fi
