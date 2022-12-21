@@ -2,7 +2,6 @@
 
 cron_package: cron
 dconf_package: dconf-cli
-dns_utils_package: dnsutils
 python_package: python3
 python_pip_package: python3-pip
 python_psutil_package: python3-psutil
@@ -13,13 +12,10 @@ monitor_system: htop
 mutli_terminal: tmux
 curl_package: curl
 wget_package: wget
-network_tools: net-tools
 rsync_package: rsync
 git_package: git
 perl_package: perl
-tig_package: tig
 terminal_screen_saver: cmatrix
-trace_package: traceroute
 network_mapper: nmap
 cdiff: colordiff
 mutli_screen: screen

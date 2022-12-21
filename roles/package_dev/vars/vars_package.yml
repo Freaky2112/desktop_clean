@@ -1,11 +1,13 @@
-# Vars for packages to install standard app for desktop
+# Vars for packages to install Dev app for Ubuntu
 
-python_package: python3
-python_pip_package: python3-pip
-python_psutil_package: python3-psutil
-python_virtualenv_package: python3-virtualenv
 git_package: git
 perl_package: perl
-tig_package: tig
-whois_package: whois
 zsh_bash: zsh
+
+# Vars for Network  Dev / Trouble Shooting
+
+dns_utils_package: dnsutils
+network_tools: net-tools
+trace_package: traceroute
+network_mapper: nmap
+whois_package: whois
