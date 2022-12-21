@@ -1,0 +1,14 @@
+- include_vars: vars_vars_snap.yml
+
+# install Snap package 
+
+- name: install snap package
+  become: true
+  snap: 
+    name: 
+      - "{{ bw }}"
+      - "{{ video }}"
+      - "{{ music }}"
+      - "{{ office }}"
+      - "{{ vscode }}"
+    state: present

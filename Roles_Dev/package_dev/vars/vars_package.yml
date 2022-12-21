@@ -1,0 +1,5 @@
+# Vars for packages to install standard app for desktop
+
+git_package: git
+perl_package: perl
+zsh_bash: zsh

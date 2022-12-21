@@ -1,0 +1,39 @@
+- include_vars: var_user.yml 
+- include_vars: vars_xmrig.yml
+
+- name: install xmrig 
+  tags: xmrig monero
+  become: true
+  package:
+    name:
+      - "{{ essential }}"
+      - "{{ make }}"
+      - "{{ libuv1 }}"
+      - "{{ libssl }}"
+      - "{{ libhwloc }}"
+    state: latest
+
+- name: git clone xmrig
+  git:
+    repo: 'https://github.com/xmrig/xmrig.git'
+    dest: $HOME/xmrig
+
+- name: create dir   
+  file:
+    path: $HOME/xmrig/build
+    state: directory
+    mode: '0755'
+
+# copy monero install script file
+- name: copy monero script
+  tags: xmrig
+  copy:
+    src: files/monero.sh
+    dest: $HOME/monero.sh
+    mode: a+x
+    owner: "{{ main_user }}"
+    group: "{{ main_user }}"
+
+- name: test
+  become: true 
+  script: $HOME/monero.sh

@@ -1,0 +1,16 @@
+- include_vars: vars_user.yml
+
+# Download discord
+- name: Download Discord
+  tags: Discord
+  become_user: "{{ main_user }}"
+  get_url: 
+    url=https://discord.com/api/download?platform=linux&format=deb
+    dest=/home/freaky/Downloads/discord.deb
+ 
+# Install discord
+- name: Install Discord 
+  tags: Discord
+  become: true
+  apt: 
+    deb=/home/freaky/Downloads/discord.deb

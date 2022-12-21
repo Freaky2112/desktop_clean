@@ -1,0 +1,5 @@
+essential: build-essential
+make: cmake 
+libuv1: libuv1-dev
+libssl: libssl-dev
+libhwloc: libhwloc-dev
