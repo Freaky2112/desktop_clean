@@ -2,8 +2,6 @@
 
     # SSH AGENT  Alias
     alias  ssha='eval $(ssh-agent -s) && ssh-add ~/.ssh/github_ed25519'
-    # Distro Upgrade ( yum / pcaman / apt )
-    alias upgrade=".local/bin/upgrade.sh"
     # Update snap Packages
     alias snapupdate="sudo snap refresh"
     # Install essentiel
