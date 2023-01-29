@@ -1,4 +1,4 @@
-- include_vars: vars_vars_snap.yml
+- include_vars: vars_snap.yml
 
 # install Snap package 
 
