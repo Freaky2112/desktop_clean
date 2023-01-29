@@ -15,7 +15,6 @@
       - "{{ rsync_package }}"
       - "{{ network_mapper }}"
       - "{{ cdiff }}"
-      - "{{ dns_utils_package }}"
       - at
       - "{{ mutli_screen }}"
       - "{{ ssh_mount }}"
