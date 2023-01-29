@@ -20,7 +20,7 @@
 - name: create scripts directory
   tags: scripts
   file:
-    path: /home/freaky/.local/bin
+    path: $HOME/.local/bin
     state: directory
     owner: "{{ main_user }}"
     group: "{{ main_user }}"
