@@ -37,7 +37,7 @@ echo "
 |       ||   |___ |   |    |       ||       |  |   |  |   | | | |   ||   |_| |          |     |_ |       || | |   ||   |    |   | |   |_| |
 |______| |_______||___|    |_______||_______|  |___|  |___| |_|  |__||_______|          |_______||_______||_|  |__||___|    |___| |_______| "
 
-ansible-pull -o -U https://github.com/Freaky2112/ansible_desktop.git &>/dev/null
+ansible-pull -o -U https://github.com/Freaky2112/desktop_clean.git &>/dev/null
 
 echo "
 
