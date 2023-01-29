@@ -22,8 +22,8 @@
   file:
     path: /home/freaky/.local/bin
     state: directory
-    owner: "{{ main_user }}"
-    group: "{{ main_user }}"
+    owner: freaky
+    group: freaky
 
 # copy new copy of bash aliases
 - name: copy bash aliases file
