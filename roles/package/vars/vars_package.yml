@@ -20,3 +20,4 @@ network_mapper: nmap
 cdiff: colordiff
 mutli_screen: screen
 ssh_mount: sshfs
+network_tools: net-tools
