@@ -36,10 +36,10 @@
 
 # copy scripts files
 - name: copy scripts files
-  become_user: "{{ main_user }}"
+  become_user: freaky
   copy:
     src: files/upgrade.sh
     dest: /home/freaky/.local/bin/upgrade.sh
-    owner: root
-    group: root
+    owner: freaky
+    group: freaky
     mode: a+x
