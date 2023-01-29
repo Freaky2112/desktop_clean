@@ -20,7 +20,7 @@
 - name: create scripts directory
   tags: scripts
   file:
-    path: $HOME/.local/bin
+    path: /home/freaky/.local/bin
     state: directory
     owner: "{{ main_user }}"
     group: "{{ main_user }}"
@@ -39,7 +39,7 @@
   become_user: "{{ main_user }}"
   copy:
     src: files/upgrade.sh
-    dest: .local/bin/upgrade.sh
+    dest: /homw/freaky/.local/bin/upgrade.sh
     owner: root
     group: root
     mode: a+x
