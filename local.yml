@@ -25,7 +25,7 @@
     - discord
     - favorite
     # - vscode
-    - snap_install
+    # - snap_install
     
     
     ##- include: tasks/cron.yml
