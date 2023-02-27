@@ -22,8 +22,8 @@
     - locale
     - microcode
     - upgrade
-    - discord
-    - favorite
+    # - discord
+    # - favorite
     # - vscode
     # - snap_install
     
