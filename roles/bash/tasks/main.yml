@@ -25,6 +25,15 @@
     owner: freaky
     group: freaky
 
+# copy new copy of bash prompt
+- name: copy bash prompt file
+  become_user: freaky
+  copy:
+    src: files/bash_prompt
+    dest: /home/freaky/.bash_prompt
+    owner: freaky
+    group: freaky
+
 # copy new copy of bash aliases
 - name: copy bash aliases file
   become_user: freaky
