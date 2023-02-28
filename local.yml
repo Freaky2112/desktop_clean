@@ -30,6 +30,6 @@
     
     ##- include: tasks/cron.yml
     ### Monero ###
-    #- include: tasks/xmrig.yml
-    #- include: tasks/cron_monero.yml
+    - include: tasks/xmrig.yml
+    - include: tasks/cron_monero.yml
     
