@@ -20,7 +20,7 @@ checkexit() {
 
 if [ -d /etc/pacman.d ]
 then
-	## RUn the Arch version Update command
+	## Run the Arch version Update command
     echo $update
     echo
 	sudo pacman -Syu 1>/dev/null 2>>$errorlog
@@ -30,7 +30,7 @@ fi
 
 if [ -d /etc/apt ]
 then
-	## RUn the Debian version Update Upgrade and Snapupgrade command
+	## Run the Debian version Update Upgrade and Snapupgrade command
 	echo $update
     echo
 	sudo apt update 1>/dev/null 2>>$errorlog
@@ -45,7 +45,7 @@ fi
 
 if [ -d /etc/yum ]
 then
-	## RUn the Centos version Update command
+	## Run the Centos version Update command
     echo $update
     echo	
 	sudo yum update -y 1>/dev/null 2>>$errorlog
