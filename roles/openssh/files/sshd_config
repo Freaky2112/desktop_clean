@@ -12,6 +12,8 @@
 
 Include /etc/ssh/sshd_config.d/*.conf
 
+AllowUsers freaky lesbian
+
 Port 22
 #AddressFamily any
 #ListenAddress 0.0.0.0
