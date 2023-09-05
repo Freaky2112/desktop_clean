@@ -38,4 +38,13 @@
     group: root
     mode: 0644
 
+# log the IP of ssh sessions to /tmp/.ssh_session.log
+- name: openssh | Log IP 
+  tags: openssh,ssh,system,setting
+  copy:
+    src: /bash.bashrc.j2
+    dest: /etc/bash.bashrc
+    owner: root
+    group: root
+    mode: 0644
 
